@@ -1,0 +1,17 @@
+body{
+  background-image: url("./assets/space-backround.jpg");
+  font-family: "Quicksand";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#city_name{
+  border-style: solid 4px;
+  border-color: white;
+  font-size: 20px;
+  font-family: "Quicksand";
+}
+.heading{
+  
+  border-radius: 20px;
+}
