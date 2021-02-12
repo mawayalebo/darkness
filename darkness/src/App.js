@@ -25,7 +25,7 @@ const App = () => {
       <Nav/>
       <Search/>
       {loading && <div><h1>Loading</h1></div> }
-      {error && <div><h1>Error</h1></div>}
+      {error && <div><h1>{error}</h1></div>}
       {currentData && <CurrentWeather currentData = { currentData }/>}
     </div>
    );
