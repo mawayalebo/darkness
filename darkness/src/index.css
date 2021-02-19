@@ -1,5 +1,5 @@
 body{
-  background-image: url("./assets/space-backround.jpg");
+  background-image: url("./assets/purple-smoke.png");
   font-family: "Quicksand";
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body{
 }
 */
 nav{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .current-description{
   font-size: 30px;
