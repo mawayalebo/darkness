@@ -1,69 +1,8 @@
 body{
-  background-image: url("./assets/purple-smoke.png");
+  background-image: url("./assets/space-blur.png");
   font-family: "Quicksand";
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-#city_name{
-  border-style: solid 4px;
-  border-color: white;
-  font-size: 20px;
-  font-family: "Quicksand";
-}
-.heading{
-  background-color: rgba(0, 0, 0, 0.3);
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-}
-.currently-box{
-  border-block-style: solid;
-  height: 200px;
-}
-.temp-deg{
-  font-size: 50px;
-  position: relative;
-  top: 20px;
-}
-.weather-icon{
-  position: relative;
-  top: -250px
-}
-.daily-weather{
-  position: relative;
-  top: -100px
-}
-/*nav{
-  background-image: url("./assets/space-backround.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-*/
-nav{
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.current-description{
-  font-size: 30px;
-  position: relative;
-  top: -340px;
-}
-.low_high{
-  font-size: 30px;
-  position: relative;
-  top: -300px;
-  text-transform: bold;
-}
-.low_high_box{
-  position: relative;
-  top: -50px;
-}
-.description-box{
-  position: relative;
-  border-block-color: black;
-  height: 350px;
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  top:200px;
 }
 

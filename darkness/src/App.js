@@ -11,6 +11,7 @@ const App = () => {
   navigator.geolocation.getCurrentPosition(position =>{
     setLon(position.coords.longitude);
     setLat(position.coords.latitude);
+    console.log(position);
   });
 
    if(!lon && !lat){
@@ -25,7 +26,7 @@ const App = () => {
       <Nav/>
       {loading && <div><h1>Loading</h1></div> }
       {error && <div><h1>{error}</h1></div>}
-      {currentData && <CurrentWeather currentData = { currentData }/>}
+      {currentData && <CurrentWeather currentData = { currentData } coordinates={{lon, lat}}/>}
     </div>
    );
 }
