@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { SideNav, SideNavItem } from "react-materialize";
 import "../css/currently.css";
+
 const Currently = ({currentData, coordinates}) => {
      console.log(coordinates.lon);
      const [ cityName, setCityName ] = useState("London");
@@ -14,7 +16,7 @@ const Currently = ({currentData, coordinates}) => {
             <section>
                 <div className="container">
                     <div className="city_name_box ">
-                        <span className="white-text col s12">{cityName}</span>
+                        <span data-target="hourly_sidenav" className="white-text col s12 sidenav-trigger">{cityName}</span>
                         <i class="material-icons white-text tiny">location_on</i>
                     </div>
                     <div data-target="current_more_modal" className="current_temp_box">

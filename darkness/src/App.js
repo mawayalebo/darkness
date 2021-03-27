@@ -3,6 +3,7 @@ import Search from "./components/search"
 import CurrentWeather from "./components/currentWeather";
 import useFetch from "./hooks/useFetch";
 import { useState } from 'react'
+import { BrowserRouter as Router } from "react-router-dom";
 
 
 const App = () => {
@@ -23,10 +24,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <Nav/>
-      {loading && <div><h1>Loading</h1></div> }
-      {error && <div><h1>{error}</h1></div>}
-      {currentData && <CurrentWeather currentData = { currentData } coordinates={{lon, lat}}/>}
+      <Router>
+        <Nav/>
+        {loading && <div><h1>Loading</h1></div> }
+        {error && <div><h1>{error}</h1></div>}
+        {currentData && <CurrentWeather currentData = { currentData } coordinates={{lon, lat}}/>}
+      </Router>
     </div>
    );
 }

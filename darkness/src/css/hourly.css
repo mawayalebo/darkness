@@ -1,0 +1,14 @@
+.hourly{
+    width: 40vw !important;
+    height: max-content !important;
+    padding: 10px;
+    
+}
+.background{
+    background-color: rgba(46, 2, 87, 0.727);
+    width: 100%;
+    height: max-content;
+    z-index: 3;
+    position: absolute;
+    top: 8%;
+}

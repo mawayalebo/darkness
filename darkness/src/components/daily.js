@@ -6,7 +6,7 @@ const Daily = ({currentData}) => {
         <div className="daily">
             <section>
             <div className="row">
-                <h4 className="white-text col s12">Daily</h4>
+                <h4 data-target="hourly_sidenav" className="white-text col s12 sidenav-trigger">Daily</h4>
             </div>
             <div className="">
                 <Carousel className="daily-weather">
