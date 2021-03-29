@@ -1,18 +1,14 @@
 import {Carousel} from "react-materialize";
+import "../css/daily.css";
 const Daily = ({currentData}) => {
 
      var x = 0;
-    return ( 
-        <div className="daily">
-            <section>
-            <div className="row">
-                <h4 data-target="hourly_sidenav" className="white-text col s12 sidenav-trigger">Daily</h4>
-            </div>
-            <div className="">
-                <Carousel className="daily-weather">
+    return (
+            <>
+                <Carousel className="daily_weather">
                     {
                         currentData.daily.map(day=>(
-                            <a className="carousel-item " id={x++} key={day.dt}>
+                            <a className="carousel-item " id={x++} key={day.dt} href="#0">
                                 <div className="card transparent z-depth-2">
                                     <div className="card-content">
                                         <div className="card-title white-text">
@@ -45,10 +41,7 @@ const Daily = ({currentData}) => {
                         ))
                     }
                 </Carousel>
-            </div>
-            </section>
-        </div>
+            </>
      );
 }
- 
 export default Daily;

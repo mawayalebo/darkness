@@ -1,0 +1,15 @@
+.currently_span{
+    height: 200px !important;
+    border-radius: 60px;
+    margin-top: 5px !important;
+    width: 100% !important;
+}
+.MuiSkeleton-root{
+    margin-top: 40px;
+    border-radius: 60px;
+}
+.current_city_span{
+    width: 150px !important;
+    position: relative;
+    left: 30%;
+}

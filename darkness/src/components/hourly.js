@@ -2,7 +2,6 @@ import "../css/hourly.css";
 import { Timeline, TimelineItem, TimelineConnector, TimelineSeparator, TimelineDot, TimelineOppositeContent, TimelineContent} from "@material-ui/lab";
 
 const Hourly = ({currentData}) => {
-    
     return (
         <>
             <Timeline align="alternate">

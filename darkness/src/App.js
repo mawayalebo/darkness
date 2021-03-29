@@ -1,9 +1,9 @@
 import Nav from "./components/nav";
-import Search from "./components/search"
 import CurrentWeather from "./components/currentWeather";
 import useFetch from "./hooks/useFetch";
-import { useState } from 'react'
+import { useState } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
+import CurrentWeatherSkeleton from "./skeletons/currentWeatherSkeleton";
 
 
 const App = () => {
@@ -12,7 +12,6 @@ const App = () => {
   navigator.geolocation.getCurrentPosition(position =>{
     setLon(position.coords.longitude);
     setLat(position.coords.latitude);
-    console.log(position);
   });
 
    if(!lon && !lat){
@@ -26,7 +25,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Nav/>
-        {loading && <div><h1>Loading</h1></div> }
+        {loading && <CurrentWeatherSkeleton/> }
         {error && <div><h1>{error}</h1></div>}
         {currentData && <CurrentWeather currentData = { currentData } coordinates={{lon, lat}}/>}
       </Router>

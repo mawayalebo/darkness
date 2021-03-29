@@ -1,0 +1,7 @@
+.container_wrapper{
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+}
+.MuiSkeleton-root{
+    background-color: rgba(252, 252, 252, 0.152) !important;
+}

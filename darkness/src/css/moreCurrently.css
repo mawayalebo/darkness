@@ -1,0 +1,22 @@
+.modal-footer{
+    background: none !important;
+    color: orangered !important;
+}
+.modal-footer button{
+    color: orangered !important;
+}
+.modal-overlay{
+    background: url("../assets/space-blur.png");
+    background-size: cover;
+}
+.heading_dates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weekday_heading{
+    font-size: 30px;
+}
+.modal{
+    background-color: rgba(112, 0, 108, 0.344) !important;
+    border-radius: 40px;
+}
