@@ -60,3 +60,56 @@
     top: 8%;
     z-index: 1;
 }
+
+/* for small screens */
+
+.low_high_box_small{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    position:relative;
+    top: -15%;
+}
+.weather_icon_box_small{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.description_box_small{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20%;
+    width: 150px !important;
+}
+.more_info_box_small{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    border-radius: 5px;
+}
+.more_info_box_small i{
+    position: relative;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.feels_like{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.city_name_box_small{
+    margin-top: 20px;
+}
+.now_small{
+    position: relative;
+    margin: 0;
+}
+.city_name_box_small{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:0;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
