@@ -6,7 +6,7 @@ const Hourly = ({currentData}) => {
         <>
             <Timeline align="alternate">
                 {
-                    currentData.hourly.slice(9,19).map(item =>(
+                    currentData.hourly.slice(0,10).map(item =>(
                         <TimelineItem key={item.dt}>
                             <TimelineOppositeContent>
                                 <p className="grey-text">{new Date(item.dt * 1000).toLocaleString("en-US",{timeStyle:"short"})}</p>
