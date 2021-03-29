@@ -95,9 +95,11 @@
     top: 60%;
     transform: translateY(-50%);
 }
-.feels_like{
+.feels_like_small{
     margin-bottom: 0;
     margin-top: 0;
+    font-size: 40px;
+    text-shadow: 3px 6px 5px rgba(0, 0, 0, 0.302);
 }
 .city_name_box_small{
     margin-top: 20px;

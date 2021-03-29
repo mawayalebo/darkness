@@ -51,7 +51,7 @@ const Currently = ({currentData, coordinates}) => {
                             <div className="current_weather_box_small">
                                 <div className="feels_like_box_small center">
                                     <p className="purple-text text-lighten-3 now_small">Now</p>
-                                    <p className="white-text feels_like">{Math.round(currentData.current.feels_like)}<sup>o</sup>C</p>
+                                    <p className="white-text feels_like_small">{Math.round(currentData.current.feels_like)}<sup>o</sup>C</p>
                                     <div className="low_high_box_small center">
                                         <p  className="white-text">Low <br/> {Math.round(currentData.daily[0].temp.min)}<sup>o</sup>C</p>
                                         <p  className="white-text">High <br/> {Math.round(currentData.daily[0].temp.max)}<sup>o</sup>C</p>
